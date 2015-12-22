@@ -1,0 +1,33 @@
+1.include:在一个布局文件中引用另一布局文件
+2.在android项目中如何创建一个Activity
+1)必须继承自Activity类
+2)重写onCreate方法，通过setContentView
+	加载要显示的布局文件
+3)在AndroidManifest.xml文件中配置Activity
+	android:name --对应的是Activity的类
+	android:label--表示显示的标题
+	android:screenOrientation
+		---当前页面是哪个方式显示
+		   用横屏还是竖屏
+		   默认根据手机自动识别
+	android:screenOrientation="landscape"
+		表示强制横屏
+  所有Activity都必须在application下配置，有且只有一个
+  activity包含intent-filter：
+  <intent-filter>
+	<action android:name="android.intent.action.MAIN" />
+
+	<category android:name="android.intent.category.LAUNCHER" />
+   </intent-filter>
+
+   通常是欢迎页面为运行的入口
+3.activity之间的跳转，通过intent实现
+	Intent intent=new Intent(当前对象,目标类型);
+	startActivity(intent);
+4.传递和获取数据
+  通过intent.putExtra(key,value);
+  必须通过getIntent获取传递的意图
+  通过intent.getXxxExtra("key");
+
+5.activity返回数据 
+6.使用AlertDialog显示自定义布局，对话框

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">猜鸡蛋</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="main_text_msg">猜猜鸡蛋在哪里?</string>
+    <string name="main_btn_reset">再来一次</string>
+</resources>

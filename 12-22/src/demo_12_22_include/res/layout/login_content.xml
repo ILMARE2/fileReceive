@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+	<EditText 
+       android:id="@+id/content_edit_loginname"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="请输入用户名"
+       android:layout_alignParentTop="true"
+       android:layout_marginTop="30dp"/>
+	<EditText 
+	    android:id="@+id/content_edit_loginpwd"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="请输入密码"
+	    android:layout_below="@id/content_edit_loginname"
+	    android:inputType="textPassword"
+	    android:layout_marginTop="20dp"/>
+</RelativeLayout>
